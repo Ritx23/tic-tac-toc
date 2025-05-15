@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <!-- <style>
+        #board{
+            display: grid;
+            width: 150px;
+            height: 150px;
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+    </style> -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            background-color: #1766ab;
+        }
+    
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+    
+        #board {
+            display: grid;
+            grid-template-columns: repeat(3, 60px);
+            grid-template-rows: repeat(3, 60px);
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+    
+        .cell {
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            background-color: #ffffff;
+            border: 2px solid #4682b4;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        .cell:hover {
+            background-color: #dbefff;
+        }
+    
+        .cell:disabled {
+            cursor: default;
+            background-color: #f0f0f0;
+            color: #555;
+        }
+    
+        #status {
+            font-size: 1.2rem;
+            color: #444;
+            margin-bottom: 10px;
+            min-height: 24px;
+        }
+    
+        #reset {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #4682b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        #reset:hover {
+            background-color: #315f86;
+        }
+    </style>
+    
+</head>
+<body>
+    <h2>Tic Tac Toe</h2>
+    <div id="board">
+        <button class="cell" data-index="0"></button>
+        <button class="cell" data-index="1"></button>
+        <button class="cell" data-index="2"></button>
+        <button class="cell" data-index="3"></button>
+        <button class="cell" data-index="4"></button>
+        <button class="cell" data-index="5"></button>
+        <button class="cell" data-index="6"></button>
+        <button class="cell" data-index="7"></button>
+        <button class="cell" data-index="8"></button>
+    </div>
+    <p id="status"></p>
+    <button id="reset">Restart</button>
+
+    <script src=script.js>
+        
+    </script>
+</body>
+</html>
